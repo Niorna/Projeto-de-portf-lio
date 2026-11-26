@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leonardo João Ramos Gomes | Conserto de PCs e notebooks com o auxilio do meu pai</title>
+  <meta name="description" content="Portfólio de Leonardo João Ramos Gomes: conserto de PCs e notebooks, feito em dupla com meu pai.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topo" id="topo">
+  <a class="logo" href="#inicio">Bancada <span>Leonardo</span></a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu" class="menu">
+    <a href="#sobre">Sobre</a>
+    <a href="#consertos">Consertos</a>
+    <a href="#ferramentas">Ferramentas</a>
+    <a href="#bancada">Bancada</a>
+    <a href="#processo">Processo</a>
+    <a class="menu-cta" href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <!-- INÍCIO -->
+  <section class="hero" id="inicio">
+    <div class="hero-texto reveal">
+      <span class="selo"><i class="ponto"></i> Conserto de PC e notebook</span>
+      <h1>Se parou de funcionar, a gente <em>abre e descobre</em> o porquê.</h1>
+      <p>Eu, Leonardo João Ramos Gomes, e meu pai consertamos PCs e notebooks na nossa bancada. Aprendi a arrumar ao lado dele, parafuso por parafuso.</p>
+      <div class="hero-botoes">
+        <a class="botao" href="#contato">Pedir um conserto</a>
+        <a class="botao contorno" href="#consertos">O que consertamos</a>
+      </div>
+      <ul class="chips">
+        <li>Pai e filho</li>
+        <li>Teste antes de trocar</li>
+        <li>Orçamento claro</li>
+      </ul>
+    </div>
+    <aside class="ficha reveal" aria-label="Ficha de exemplo de um conserto">
+      <p class="ficha-titulo"><span>Ficha de serviço</span><span class="status">concluído</span></p>
+      <dl>
+        <dt>Aparelho</dt><dd>Notebook, não carrega a bateria</dd>
+        <dt>Suspeita</dt><dd>Conector de carga com mau contato</dd>
+        <dt>Teste</dt><dd>Multímetro na saída do carregador</dd>
+        <dt>Resultado</dt><dd class="ok">Conector trocado, voltou a carregar</dd>
+      </dl>
+    </aside>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="secao" id="sobre">
+    <p class="rotulo reveal">01 · Sobre</p>
+    <h2 class="reveal">Sobre mim</h2>
+    <div class="sobre-grid">
+      <div class="moldura reveal">
+        <img src="images/sobre.jpeg" alt="Leonardo e o pai trabalhando na bancada" width="600" height="450">
+      </div>
+      <div class="reveal">
+        <p class="destaque">Sou o Leonardo, um jovem de 19 anos, estudante de Ciências da Computação na UDF e sou católico.</p>
+        <ul class="fatos">
+          <li><strong>19 anos</strong><span>Jovem e cheio de curiosidade</span></li>
+          <li><strong>Ciências da Computação</strong><span>Cursando na UDF</span></li>
+          <li><strong>Católico</strong><span>A fé guia a minha rotina e a minha vida</span></li>
+        </ul>
+        <p>Gosto de entender como as coisas funcionam por dentro. Tudo começou quando meu pai me chamou para ajudar a concertar coisas de modo geral, ele trabalhava em uma assistencia tecnica e acabou me ensinando a concertar pc, noteboock e ainda mexi com outras coisas como tv, forno, microondas dentre outros eletronicos.</p>
+        <p>Hoje ele ensina o que aprendeu em anos de bancada: ler esquemas, medir com o multímetro, soldar com calma. Eu trago a curiosidade e a paciência para pesquisar cada defeito.</p>
+        <blockquote>Antes de trocar uma peça, a gente testa para ter certeza.</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSERTOS -->
+  <section class="secao escura" id="consertos">
+    <p class="rotulo reveal">02 · Consertos</p>
+    <h2 class="reveal">O que a gente conserta</h2>
+    <p class="intro reveal">Escolha um aparelho para ver os defeitos mais comuns que atendemos.</p>
+    <div class="abas reveal" role="tablist" aria-label="Aparelhos">
+      <button role="tab" class="aba ativa" data-alvo="pc" aria-selected="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg> PC
+      </button>
+      <button role="tab" class="aba" data-alvo="notebook" aria-selected="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="10" rx="1.5"/><path d="M2 19h20"/></svg> Notebook
+      </button>
+    </div>
+    <div class="painel reveal" id="painel" role="tabpanel"></div>
+  </section>
+
+  <!-- FERRAMENTAS -->
+  <section class="secao" id="ferramentas">
+    <p class="rotulo reveal">03 · Ferramentas</p>
+    <h2 class="reveal">O que tem na nossa bancada</h2>
+    <div class="cards">
+      <article class="card reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="11" r="3"/><path d="M9 17h6"/></svg>
+        <h3>Multímetro</h3>
+        <p>Mede tensão, continuidade e diodos para achar a peça com defeito.</p>
+      </article>
+      <article class="card reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 14 10M14 10l4-4 2 2-4 4zM3 21l2-1"/></svg>
+        <h3>Ferro de solda</h3>
+        <p>Para trocar conectores, cabos e componentes com calma e precisão.</p>
+      </article>
+      <article class="card reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4a4 4 0 0 0-5 5L3 15l3 3 6-6a4 4 0 0 0 5-5l-2 2-2-2z"/></svg>
+        <h3>Chaves de precisão</h3>
+        <p>Para abrir notebooks e PCs sem estragar os parafusos.</p>
+      </article>
+      <article class="card reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 5 6 5 9a5 5 0 0 1-10 0c0-3 2-5 5-9z"/></svg>
+        <h3>Pasta térmica</h3>
+        <p>Troca para o computador parar de esquentar e de desligar sozinho.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- BANCADA -->
+  <section class="secao" id="bancada">
+    <p class="rotulo reveal">04 · Bancada</p>
+    <h2 class="reveal">Da nossa bancada</h2>
+    <p class="intro reveal">Algumas fotos de serviçoes feitos.</p>
+    <div class="galeria">
+      <figure class="reveal"><img src="images/bancada-1.jpeg" alt="PC aberto na bancada" loading="lazy" width="600" height="450"><figcaption>PC aberto para limpeza e troca de peças</figcaption></figure>
+      <figure class="reveal"><img src="images/bancada-2.jpeg" alt="Placa-mãe sendo testada" loading="lazy" width="600" height="450"><figcaption>Placa-mãe em teste</figcaption></figure>
+      <figure class="reveal"><img src="images/bancada-3.jpeg" alt="Notebook desmontado" loading="lazy" width="600" height="450"><figcaption>Notebook desmontado para limpeza</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="secao escura" id="processo">
+    <p class="rotulo reveal">05 · Processo</p>
+    <h2 class="reveal">Como trabalhamos</h2>
+    <ol class="passos">
+      <li class="reveal"><strong>Diagnóstico.</strong> Ouvimos o defeito e testamos o aparelho antes de abrir.</li>
+      <li class="reveal"><strong>Orçamento.</strong> Dizemos qual peça falhou e quanto custa trocar.</li>
+      <li class="reveal"><strong>Conserto.</strong> Trocamos ou soldamos a peça com o aparelho desligado e fora da tomada.</li>
+      <li class="reveal"><strong>Teste final.</strong> Deixamos o aparelho ligado até ter certeza de que está resolvido.</li>
+    </ol>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="secao contato" id="contato">
+    <div class="contato-caixa reveal">
+      <h2>Vamos consertar o seu?</h2>
+      <p>Conte qual aparelho está com problema e o que ele faz (ou deixa de fazer).</p>
+      <a class="botao grande" href="https://wa.me/5561999913425" target="_blank" rel="noopener">Chamar no WhatsApp · (61) 9 9991-3425</a>
+      <p class="aviso">Fontes e baterias podem causar choque ou incêndio. Não abra aparelhos sem experiência.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <p class="logo">Bancada <span>Leonardo</span></p>
+  <p>&copy; <span id="ano"></span> Leonardo João Ramos Gomes. Feito à mão, como os consertos.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
